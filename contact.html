@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to Veligaa Hardware</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="site.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <nav>
+              <ul>
+                <li class="nav-link"><a href="/index.html">Home</a></li>
+                <li class="nav-link"><a href="/about.html">About</a></li>
+                <li class="nav-link"><a href="/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+
+        
+        <br/>
+        <main>
+           <div class="card">
+            <h1>Contact Us</h1>
+
+            <p>
+                Please fill the form below and submit and we will get back to you regarding your query.
+            </p>
+
+            <hr/>
+
+            <div class="error">
+                <p class="error-message"></p>
+            </div>
+
+            <div class="success">
+                <p class="success-message"></p>
+            </div>
+
+            <form id="contact-form">
+               <div class="form-group">
+                <label for="name">Name:</label>
+                <input placeholder="Enter name" type="text" id="name" name="name" pattern="[A-Za-z]+" required>
+               </div>
+              
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input placeholder="Enter email" type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input placeholder="Enter mobile" type="tel" id="mobile" name="mobile" pattern="[0-9]{7}" required>
+              </div>
+              
+               <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input placeholder="Enter subject" type="text" id="subject" name="subject" maxlength="40" required>
+               </div>
+              
+              <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea placeholder="Type your content here" rows="5" cols="50" id="content" name="content" maxlength="250" required></textarea>
+              </div>
+              
+               <div class="form-group">
+                <button id="btnsubmit" type="button">Submit</button>
+                <button id="btnreset" type="button">Reset</button>
+               </div>
+            </form>
+              
+
+           </div>
+
+
+
+        </main>
+        
+        <script src="jquery-3.6.4.js"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>
